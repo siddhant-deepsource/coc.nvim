@@ -1,0 +1,22 @@
+version = 1
+
+exclude_patterns = [
+    ".github/**",
+    ".vim/**",
+    "autoload/**",
+    "data/**",
+    "doc/**",
+    "plugin/**"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  module_system = "commonjs"
+  environment = [
+    "nodejs",
+    "jest"
+  ]
+  dialect = "typescript"
